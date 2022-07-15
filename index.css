@@ -1,0 +1,42 @@
+body {
+    overflow: hidden;
+    min-height: 120vh;
+    cursor: zoom-in;
+}
+
+.bubble {
+    position: absolute;
+    border-radius: 300px;
+    background: rgba(255, 166, 0, 0.6);
+    opacity: 0;
+    animation: anim 8s forwards;
+    filter: hue-rotate(0deg);
+}
+
+@keyframes anim {
+    to {
+        top: -250px;
+        left: var(--left);
+        opacity: 1;
+        filter: hue-rotate(1080deg);
+    }
+}
+
+h3 {
+    font-size: 10rem;
+    text-align: center;
+    margin-top: 20px;
+    color: rgba(128, 128, 128, 0.555);
+}
+
+h2 {
+    opacity: 0;
+    position: absolute;
+    text-align: center;
+    left: 474px;
+    transition: 3s;
+    background-color: rgb(91, 233, 91);
+    border-radius:  15px;
+    font-size: 4em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
