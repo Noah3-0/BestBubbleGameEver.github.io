@@ -3,7 +3,7 @@ const nice = document.querySelector("h2");
 let counter = 0;
 let playOnce = true;
 let playToo = true;
-let speed = 100;
+let speed = 350;
 
 const bubbleMaker = () => {
   const bubble = document.createElement("span");
@@ -26,7 +26,7 @@ const bubbleMaker = () => {
     audio.play();
   };
 
-  bubble.addEventListener("mouseover", () => {
+  bubble.addEventListener("click", () => {
     ring();
     counter++;
     counterDisplay.textContent = counter;

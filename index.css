@@ -1,7 +1,7 @@
 body {
     overflow: hidden;
     min-height: 120vh;
-    cursor: zoom-in;
+    cursor: crosshair;
 }
 
 .bubble {
