@@ -1,9 +1,11 @@
 const counterDisplay = document.querySelector("h3");
 const nice = document.querySelector("h2");
+const form = document.getElementById("form");
+const spd = document.getElementById("spd");
 let counter = 0;
 let playOnce = true;
 let playToo = true;
-let speed = 350;
+let value = "500";
 
 const bubbleMaker = () => {
   const bubble = document.createElement("span");
@@ -61,4 +63,12 @@ const bubbleMaker = () => {
   }, 8000);
 };
 
-setInterval(bubbleMaker, speed);
+spd.addEventListener("input", (e) => {
+  value = spd.value;
+});
+
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+  value = spd.value;
+  setInterval(bubbleMaker, value);
+});

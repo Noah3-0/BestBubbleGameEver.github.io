@@ -1,7 +1,12 @@
 body {
     overflow: hidden;
     min-height: 120vh;
-    cursor: crosshair;
+    cursor: crosshair                           ;
+}
+
+.box {
+    position: absolute;
+    top: 70px;
 }
 
 .bubble {
